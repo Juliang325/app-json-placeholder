@@ -17,7 +17,6 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
     this.getCatalogo()
-    console.log(this.users);
     
   }
 

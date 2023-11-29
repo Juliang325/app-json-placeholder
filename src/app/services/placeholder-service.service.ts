@@ -15,4 +15,8 @@ export class PlaceholderServiceService {
     return this.http.get<Users[]>(environment.baseUrl + environment.users)
   }
 
+  getOneUser(id: number): Observable<Users>{
+    return this.http.get<Users>(environment.baseUrl + environment.users + id)
+  }
+
 }
