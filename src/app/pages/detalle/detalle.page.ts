@@ -36,7 +36,6 @@ export class DetallePage implements OnInit {
     });
 
     this.getAlbums();
-    this.getPhotos();
   }
 
   getAlbums(){
@@ -48,12 +47,5 @@ export class DetallePage implements OnInit {
     )
   }
 
-  getPhotos(){
-    this.servi.getPhotos(this.id, 1).subscribe(
-      photo => {
-        this.photos = photo;
-      }
-    )
-  }
 
 }
